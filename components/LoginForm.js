@@ -7,13 +7,13 @@ import {
   Item,
   Input,
   Button,
-  Text
+  Text,
+  View,
+  H1
 } from "native-base";
 
 import { connect } from "react-redux";
-import { login, logout, signup, checkForExpiredToken } from "../redux/actions";
-// Actions
-// import { login } from "./redux/actions";
+import { login, signup, checkForExpiredToken, logout } from "../redux/actions";
 
 class LoginForm extends Component {
   state = {
@@ -25,9 +25,6 @@ class LoginForm extends Component {
   };
   componentDidMount = () => {
     this.props.checkForToken();
-  };
-  handleSubmit = () => {
-    alert("Check my code the states are empty");
   };
   handlelogin = () => {
     this.props.login(this.state);

@@ -1,4 +1,4 @@
-import * as actionTypes from "./actionTypes";
+import * as actionTypes from "./ActionTypes";
 import axios from "axios";
 import jwt_decode from "jwt-decode";
 import { AsyncStorage } from "react-native";
